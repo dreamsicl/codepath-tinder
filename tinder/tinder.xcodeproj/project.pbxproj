@@ -14,6 +14,7 @@
 		33A888211EB180A500A1D313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A8881F1EB180A500A1D313 /* LaunchScreen.storyboard */; };
 		33A8882C1EB180A500A1D313 /* tinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A8882B1EB180A500A1D313 /* tinderTests.swift */; };
 		33A888371EB180A500A1D313 /* tinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A888361EB180A500A1D313 /* tinderUITests.swift */; };
+		33A888451EB1810C00A1D313 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A888441EB1810C00A1D313 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		33A888321EB180A500A1D313 /* tinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A888361EB180A500A1D313 /* tinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tinderUITests.swift; sourceTree = "<group>"; };
 		33A888381EB180A500A1D313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A888441EB1810C00A1D313 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				33A8881D1EB180A500A1D313 /* Assets.xcassets */,
 				33A8881F1EB180A500A1D313 /* LaunchScreen.storyboard */,
 				33A888221EB180A500A1D313 /* Info.plist */,
+				33A888441EB1810C00A1D313 /* CardsViewController.swift */,
 			);
 			path = tinder;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				33A888191EB180A500A1D313 /* ViewController.swift in Sources */,
 				33A888171EB180A500A1D313 /* AppDelegate.swift in Sources */,
+				33A888451EB1810C00A1D313 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
