@@ -43,9 +43,36 @@ class CardsViewController: UIViewController {
         if sender.state == .began {
             cardInitialCenter = personView.center
         } else if sender.state == .changed {
-            personView.center = CGPoint(x: cardInitialCenter.x + translation.x, y: cardInitialCenter.y)
+            
+            let rotate = 10.0
+
+            //personView.center = CGPoint(x: cardInitialCenter.x + translation.x, y: cardInitialCenter.y)
+            if location.x > 0 {
+                
+                // rotate view clockwise
+                personView.transform = personView.transform.rotated(by: CGFloat(rotate * M_PI / 180))
+                
+            } else {
+                
+                // rotate view counterclockwise
+                personView.transform = personView.transform.rotated(by: CGFloat(-rotate * M_PI / 180))
+            }
+            
+            if translation.x > 50 {
+                // animate it off the screen to the right
+                UIView.animate(withDuration: 0.4, animations: { 
+                    self.personView.center.x = self.view.frame.maxX + self.personView.frame.width
+                })
+                
+            } else if translation.x < -50 {
+                // animate it off the screen to the left
+                self.personView.center.x = self.view.frame.minX + self.personView.frame.width
+            } else {
+                self.personView.center = self.cardInitialCenter
+            }
+            
         } else if sender.state == .ended {
-            print("Gesture ended")
+            self.personView.transform = CGAffineTransform.identity
         }
     }
 
